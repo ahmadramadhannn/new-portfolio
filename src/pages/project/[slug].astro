@@ -1,0 +1,21 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+  const allProjects = await Astro.glob("../../data/*.md");
+
+  return allProjects.map((project) => {
+    return {
+      params: { slug: project.frontmatter.slug },
+      props: { ...project },
+    };
+  });
+}
+
+const { Content, frontmatter } = Astro.props;
+const title = frontmatter.title;
+---
+
+<MainLayout title={title}>
+  <Content />
+</MainLayout>

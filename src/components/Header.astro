@@ -1,6 +1,18 @@
 ---
+import Icons from "./Icons.astro";
+import pages from "../data/pages";
 ---
 
-<header>
-  <p>this is header</p>
+<header
+  class="z-30 w-10/12 md:w-72 fixed bottom-5 md:top-4 left-1/2 -translate-x-1/2 border-gray-300 border h-12 rounded-md p-3 bg-white text-black shadow-sm shadow-cyan-300 grid grid-cols-4 place-content-center place-items-center md:gap-10 px-8"
+>
+  {
+    pages.map((page) => (
+      <>
+        <a href={page.href} class="hover:text-cyan-500 text-lg">
+          <Icons icon={page.icon} />
+        </a>
+      </>
+    ))
+  }
 </header>

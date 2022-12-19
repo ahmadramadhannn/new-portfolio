@@ -22,7 +22,7 @@ const pages: Pages[] = [
   },
   {
     id: 4,
-    icon: "bi-exclamation-circle",
+    icon: "bi-file-earmark-person",
     href: "/about",
   },
 ];

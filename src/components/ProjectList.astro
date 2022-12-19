@@ -1,0 +1,10 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+const { projects } = Astro.props;
+---
+
+<section>
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5 mt-5">
+    {projects.map((project: any) => <ProjectCard project={project} />)}
+  </div>
+</section>

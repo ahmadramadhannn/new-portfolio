@@ -1,0 +1,23 @@
+---
+export interface ProjectLink {
+  demoWebsite: string;
+  githubRepo: string;
+}
+
+const { demoWebsite, githubRepo } = Astro.props;
+---
+
+<div class="absolute bottom-4 right-4 flex justify-end items-center gap-3">
+  <a href={demoWebsite} target="_blank" class="flex items-center gap-3">
+    <i class="bi bi-globe"></i>
+    <p class="text-[16px] font-medium text-white/50 hover:text-cyan-500">
+      Visit
+    </p>
+  </a>
+  <a href={githubRepo} target="_blank" class="flex items-center gap-3">
+    <i class="bi bi-github"></i>
+    <p class="text-[16px] font-medium text-white/50 hover:text-cyan-500">
+      Source
+    </p>
+  </a>
+</div>

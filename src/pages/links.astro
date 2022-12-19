@@ -6,22 +6,27 @@ import linkData from "../data/linkData";
 ---
 
 <MainLayout title="My Links">
-  <div
-    class="mt-32 mx-auto w-11/12 max-w-[1080px] grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5"
-  >
-    {
-      linkData.map((link) => (
-        <>
-          <LinksCard
-            name={link.name}
-            background={link.background}
-            href={link.href}
-            accountName={link.accountName}
-            icon={link.icon}
-          />
-        </>
-      ))
-    }
+  <div class="mt-[100px] mx-auto w-11/12 md:max-w-[1080px]">
+    <h1 id="heading" class="text-3xl font-semibold">My Links</h1>
+    <p class="text-white/50 font-medium mt-3">
+      There are a collection of related links to my account, like github,
+      telegram, etc.
+    </p>
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5 mt-5">
+      {
+        linkData.map((link) => (
+          <>
+            <LinksCard
+              name={link.name}
+              background={link.background}
+              href={link.href}
+              accountName={link.accountName}
+              icon={link.icon}
+            />
+          </>
+        ))
+      }
+    </div>
   </div>
 </MainLayout>
 

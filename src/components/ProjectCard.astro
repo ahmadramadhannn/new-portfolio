@@ -1,0 +1,42 @@
+---
+import ProjectLink from "./ProjectLink.astro";
+const { project } = Astro.props;
+
+const limitString = (string: string, length: number, end = "...") => {
+  return string.length < length ? string : string.substring(0, length) + end;
+};
+---
+
+<div class="border border-gray-500 grid shadow-sm shadow-cyan-500">
+  <a href={`project/${project.frontmatter.slug}`}>
+    <img
+      src={project.frontmatter.image}
+      alt="thumbnail"
+      loading="lazy"
+      class="h-[170px] w-full object-cover"
+    />
+  </a>
+  <div class="p-5 h-[13em] relative">
+    <a
+      href={`project/${project.frontmatter.slug}`}
+      id="projectname"
+      class="font-bold text-xl hover:text-cyan-500"
+      >{project.frontmatter.project_name}</a
+    >
+    <p
+      id="desc"
+      class="mt-3 font-medium text-sm text-white/50 font-['IBM_Plex_Serif']"
+    >
+      {
+        limitString(
+          "A rust official website clone with vue js and tailwindcss.",
+          200
+        )
+      }
+    </p>
+    <ProjectLink
+      demoWebsite={project.frontmatter.demoLink}
+      githubRepo={project.frontmatter.githubLink}
+    />
+  </div>
+</div>

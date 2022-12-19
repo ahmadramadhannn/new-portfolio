@@ -1,16 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-
-const projects = await Astro.glob("../data/*.md");
 ---
 
 <MainLayout title="Home" description="Welcome to my portfolio!">
-  <h1>hello world</h1>
-  {
-    projects.map((project) => (
-      <a href={`/project/${project.frontmatter.slug}`}>
-        {project.frontmatter.title}
-      </a>
-    ))
-  }
+  <h1 class="text-red-500">hello world</h1>
 </MainLayout>

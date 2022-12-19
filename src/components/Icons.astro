@@ -1,9 +1,10 @@
 ---
 export interface Props {
   icon: string;
+  extraClass?: string;
 }
 
-const { icon } = Astro.props;
+const { icon, extraClass } = Astro.props;
 ---
 
-<i class={`bi ${icon}`}></i>
+<i class={`bi ${icon} ${extraClass}`}></i>

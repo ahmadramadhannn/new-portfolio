@@ -1,0 +1,41 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import LinksCard from "../components/LinksCard.astro";
+
+import linkData from "../data/linkData";
+---
+
+<MainLayout title="My Links">
+  <div
+    class="mt-32 mx-auto w-11/12 max-w-[1080px] grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5"
+  >
+    {
+      linkData.map((link) => (
+        <>
+          <LinksCard
+            name={link.name}
+            background={link.background}
+            href={link.href}
+            accountName={link.accountName}
+            icon={link.icon}
+          />
+        </>
+      ))
+    }
+  </div>
+</MainLayout>
+
+<style is:global>
+  .instagram {
+    background: linear-gradient(73.16deg, #ffd900 -76.54%, #c400aa 104.79%);
+  }
+  .github {
+    background: #333;
+  }
+  .telegram {
+    background: #0088cc;
+  }
+  .linkedin {
+    background: #0e76a8;
+  }
+</style>

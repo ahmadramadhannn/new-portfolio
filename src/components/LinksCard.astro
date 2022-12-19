@@ -1,0 +1,31 @@
+---
+import Icons from "./Icons.astro";
+export interface Links {
+  name: string;
+  icon: string;
+  accountName: string;
+  background: string;
+  href: string;
+}
+
+const { name, icon, accountName, background, href } = Astro.props;
+---
+
+<div>
+  <a
+    href={href}
+    target="_blank"
+    class={`h-[8em] rounded-md grid place-content-center place-items-center ${background}`}
+  >
+    <Icons icon={icon} extraClass="text-3xl hover:text-black" />
+  </a>
+  <div class="mt-3 grid">
+    <a
+      href={href}
+      target="_blank"
+      id="name"
+      class="text-sm font-semibold hover:text-cyan-500">{name}</a
+    >
+    <span class="text-white/70 text-[12px]">{accountName}</span>
+  </div>
+</div>

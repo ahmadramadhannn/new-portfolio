@@ -13,9 +13,9 @@ export async function getStaticPaths() {
 }
 
 const { Content, frontmatter } = Astro.props;
-const title = frontmatter.title;
+const projectName = frontmatter.project_name;
 ---
 
-<MainLayout title={title}>
+<MainLayout title={projectName}>
   <Content />
 </MainLayout>

@@ -5,6 +5,10 @@ slug: "quran-web"
 image: "https://res.cloudinary.com/dk7urhntn/image/upload/v1669644125/Screenshot_2022-11-28_20-54-08_dsy8ux.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/vue-quran"
 demoLink: "https://vue-quran-xi.vercel.app/"
+tech_stack:
+  - ["Vue JS", "https://vuejs.org/"]
+  - ["Vue Router", "https://router.vuejs.org/"]
+  - ["Tailwindcss", "https://tailwindcss.com/"]
 ---
 
 ### al-quran web

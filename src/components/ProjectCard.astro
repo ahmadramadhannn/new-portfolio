@@ -2,7 +2,7 @@
 import ProjectLink from "./ProjectLink.astro";
 const { project } = Astro.props;
 
-const limitString = (string: string, length: number, end = "...") => {
+const limitString = (string: any, length: number, end = "...") => {
   return string.length < length ? string : string.substring(0, length) + end;
 };
 ---
@@ -27,12 +27,7 @@ const limitString = (string: string, length: number, end = "...") => {
       id="desc"
       class="mt-3 font-medium text-sm text-white/50 font-['IBM_Plex_Serif']"
     >
-      {
-        limitString(
-          "A rust official website clone with vue js and tailwindcss.",
-          200
-        )
-      }
+      {limitString(project.frontmatter.description, 200)}
     </p>
     <ProjectLink
       demoWebsite={project.frontmatter.demoLink}

@@ -1,5 +1,5 @@
 ---
-import MainHeader from "./MainHeader.astro";
+import MainHead from "./MainHead.astro";
 import Header from "../components/Header.astro";
 
 const { title, description, head } = Astro.props;
@@ -8,12 +8,19 @@ const { title, description, head } = Astro.props;
 <html lang="en">
   <head>
     {head}
-    <MainHeader title={title} description={description} />
+    <MainHead title={title} description={description} />
   </head>
   <body>
     <Header />
     <main tabindex="-1">
       <slot />
     </main>
+    <style>
+      body {
+        background: #000;
+        color: white;
+        font-family: "Space Grotesk", sans-serif;
+      }
+    </style>
   </body>
 </html>

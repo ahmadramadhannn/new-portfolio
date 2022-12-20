@@ -22,6 +22,11 @@ const pages: Pages[] = [
   },
   {
     id: 4,
+    icon: "bi-files",
+    href: "/snippet",
+  },
+  {
+    id: 5,
     icon: "bi-file-earmark-person",
     href: "/about",
   },

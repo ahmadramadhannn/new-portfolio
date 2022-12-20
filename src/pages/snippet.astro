@@ -1,0 +1,22 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SnippetCard from "../components/SnippetCard.astro";
+---
+
+<MainLayout title="Code Snippet" description="Welcome to my code snippet">
+  <div class="mt-[100px] mx-auto w-11/12 md:max-w-[1080px]">
+    <h1 id="heading" class="text-3xl font-semibold hover:text-cyan-500">
+      Code Snippets
+    </h1>
+    <p class="mt-3 text-white/50 font-medium">
+      These are a collection of code snippets I've used in the past and saved.
+    </p>
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5 mt-5">
+      <SnippetCard />
+      <SnippetCard />
+      <SnippetCard />
+      <SnippetCard />
+      <SnippetCard />
+    </div>
+  </div>
+</MainLayout>

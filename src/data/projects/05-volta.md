@@ -5,6 +5,10 @@ slug: "slug"
 image: "src/assets/projects/volta.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/volta-clone"
 demoLink: "https://volta-clone.vercel.app/"
+tech_stack:
+  - []
+  - []
+  - []
 ---
 
 ### volta website

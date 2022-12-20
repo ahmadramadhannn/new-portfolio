@@ -1,0 +1,29 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import AboutMe from "../components/AboutMe.astro";
+import AboutThisWebsite from "../components/AboutThisWebsite.astro";
+---
+
+<MainLayout title="About Page" description="Welcome to about page">
+  <div class="mt-[100px] mx-auto w-11/12 md:max-w-[1080px] grid gap-6">
+    <AboutMe />
+    <AboutThisWebsite />
+    <div id="things_i_do" class="mt-6">
+      <h1
+        id="heading"
+        class="text-3xl font-semibold hover:text-cyan-500 max-w-max"
+      >
+        Things I Do
+      </h1>
+      <div class="mt-3 text-white/70 font-medium grid gap-3">
+        <p>
+          I mainly code for web-related things such as frontend using Vue /
+          Nuxt, React / Next, Svelte and likes to explore whatever new
+          javascript shiny things out there. I also occasionally do backend
+          stuff using NodeJS/deno/bun. I'm currently exploring C#/.NET and
+          flutter to expand my knowledge.
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

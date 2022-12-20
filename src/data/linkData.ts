@@ -34,6 +34,14 @@ const links: Links[] = [
   },
   {
     id: 4,
+    name: "Gmail",
+    accountName: "ahmadramadannesia@gmail.com",
+    href: "mailto:ahmadramadannesia@gmail.com",
+    background: "gmail",
+    icon: "bi-envelope",
+  },
+  {
+    id: 5,
     name: "Instagram",
     accountName: "@__ahmad_ramadhan",
     href: "https://www.instagram.com/__ahmad_ramadhan/",

@@ -1,15 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import ProjectList from "../components/ProjectList.astro";
+import Heading from "../components/Heading.astro";
 
 const projects = await Astro.glob("../data/projects/*.md");
 ---
 
 <MainLayout title="Projects">
   <div class="mt-[100px] mx-auto w-11/12 md:max-w-[1080px]">
-    <h1 id="heading" class="text-3xl font-semibold hover:text-cyan-500">
-      Projects
-    </h1>
+    <Heading text="Projects" />
     <p class="text-white/70 mt-3 font-medium">
       This is list some of my projects, some of project built with vue js and
       etc.

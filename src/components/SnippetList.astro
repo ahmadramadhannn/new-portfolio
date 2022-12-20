@@ -1,0 +1,8 @@
+---
+import SnippetCard from "./SnippetCard.astro";
+const { snippets } = Astro.props;
+---
+
+<div class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-5 mt-5">
+  {snippets.map((snippet: any) => <SnippetCard snippet={snippet} />)}
+</div>

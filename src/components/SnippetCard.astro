@@ -1,8 +1,9 @@
 ---
+const { snippet } = Astro.props;
 ---
 
 <a
-  href="#"
+  href={`snippet/${snippet.frontmatter.slug}`}
   class="border border-gray-500 min-h-[6em] shadow-sm shadow-cyan-500 p-3 hover:border-cyan-500"
 >
   <img
@@ -10,8 +11,10 @@
     class="h-8 rounded-full"
     alt="programming_logo"
   />
-  <p id="title" class="text-lg font-bold mt-3">Limit String</p>
+  <p id="title" class="text-lg font-bold mt-3">
+    {snippet.frontmatter.snippet_name}
+  </p>
   <p class="text-white/70 text-sm">
-    How to limit a string in js, in different ways
+    {snippet.frontmatter.description}
   </p>
 </a>

@@ -23,7 +23,7 @@ const pages: Pages[] = [
   {
     id: 4,
     icon: "bi-files",
-    href: "/snippet",
+    href: "/snippets",
   },
   {
     id: 5,

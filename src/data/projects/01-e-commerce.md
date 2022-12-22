@@ -7,7 +7,7 @@ singleImage: "../src/assets/projects/tokopedia.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/e-commerce-vue-supabase"
 demoLink: "https://e-commerce-vue-supabase.vercel.app/"
 tech_stack:
-  - ["Vue Js", "vue", "vue"]
-  - ["Vue Router", "vue-router", "vue-router"]
-  - ["Tailwindcss", "tailwind", "tailwind"]
+  - ["Vue Js", "vue"]
+  - ["Vue Router", "vue-router"]
+  - ["Tailwindcss", "tailwind"]
 ---

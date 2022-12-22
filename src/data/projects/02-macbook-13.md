@@ -7,9 +7,9 @@ singleImage: "../src/assets/projects/macbook13.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/macbook-pro-13-web-clone/"
 demoLink: "https://macbook-pro-13-clone-vuejs-tailwindcs.netlify.app/"
 tech_stack:
-  - ["Vue JS", "vue", "vue"]
-  - ["Vue Router", "vue-router", "vue-router"]
-  - ["Tailwindcss", "tailwind", "tailwind"]
+  - ["Vue JS", "vue"]
+  - ["Vue Router", "vue-router"]
+  - ["Tailwindcss", "tailwind"]
 ---
 
 ### macbook 13

@@ -7,9 +7,9 @@ singleImage: "../src/assets/projects/quran-web.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/vue-quran"
 demoLink: "https://vue-quran-xi.vercel.app/"
 tech_stack:
-  - ["Vue JS", "vue", "vue"]
-  - ["Vue Router", "vue-router", "vue-router"]
-  - ["Tailwindcss", "tailwind", "tailwind"]
+  - ["Vue JS", "vue"]
+  - ["Vue Router", "vue-router"]
+  - ["Tailwindcss", "tailwind"]
 ---
 
 ### al-quran web

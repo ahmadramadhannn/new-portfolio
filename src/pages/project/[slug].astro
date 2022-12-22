@@ -50,11 +50,15 @@ const tech_stack: string[] = frontmatter.tech_stack;
           <span class="text-2xl font-semibold text-white">Tech Stack</span>
         </div>
         {
-          tech_stack.map(([stackName, stackHome, stackImage]) => (
+          tech_stack.map(([stackName, stackImageandHome]) => (
             <div class="flex items-center gap-x-6">
-              <img src={logoImage[stackImage]} alt="tech_logo" class="h-8" />
+              <img
+                src={logoImage[stackImageandHome]}
+                alt="tech_logo"
+                class="h-8"
+              />
               <a
-                href={stackHomeLink[stackHome]}
+                href={stackHomeLink[stackImageandHome]}
                 target="_blank"
                 class=" hover:text-cyan-500 hover:underline no-underline"
               >

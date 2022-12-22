@@ -7,9 +7,9 @@ singleImage: "../src/assets/projects/volta.png"
 githubLink: "https://github.com/ahmadRamadhan-dotcom/volta-clone"
 demoLink: "https://volta-clone.vercel.app/"
 tech_stack:
-  - ["Vue Js", "vue", "vue"]
-  - ["Vue Router", "vue-router", "vue-router"]
-  - ["Tailwindcss", "tailwind", "tailwind"]
+  - ["Vue Js", "vue"]
+  - ["Vue Router", "vue-router"]
+  - ["Tailwindcss", "tailwind"]
 ---
 
 ### volta website

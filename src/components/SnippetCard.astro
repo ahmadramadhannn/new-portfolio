@@ -7,14 +7,14 @@ const frontmatter = snippet.frontmatter;
 
 <a
   href={`snippet/${frontmatter.slug}`}
-  class="border border-gray-500 min-h-[6em] shadow-sm shadow-cyan-500 p-3 hover:border-cyan-500"
+  class="group border border-gray-500 min-h-[6em] shadow-sm shadow-cyan-500 p-3 hover:border-cyan-500 hover:transition hover:duration-200"
 >
   <img
     src={stackImage[frontmatter.tech_stack]}
     class="h-8 rounded-full"
     alt="programming_logo"
   />
-  <p id="title" class="text-lg font-bold mt-3">
+  <p id="title" class="text-lg font-bold mt-3 group-hover:text-cyan-500">
     {frontmatter.snippet_name}
   </p>
   <p class="text-white/70 text-sm">

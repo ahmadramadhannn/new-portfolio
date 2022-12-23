@@ -1,7 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Heading from "../components/Heading.astro";
-import Icons from "../components/Icons.astro";
+import SnippetList from "../components/SnippetList.astro";
+import ProjectList from "../components/ProjectList.astro";
+
+const allSnippets = await Astro.glob("../data/snippets/*.md");
+const allProjects = await Astro.glob("../data/projects/*.md");
+
+const recentSnippets = allSnippets.slice(0, 4);
+const recentProjects = allProjects.slice(0, 4);
 ---
 
 <MainLayout title="Home" description="Welcome to my portfolio!">
@@ -15,6 +22,16 @@ import Icons from "../components/Icons.astro";
         can help you, or nobody care, i speak indonesia and english, i always
         love to be working on a cool project 😉, feel free to hit me up!
       </p>
+    </div>
+    <div class="mt-10">
+      <div id="snippet">
+        <p class="text-2xl">Recent Snippets</p>
+        <SnippetList snippets={recentSnippets} />
+      </div>
+      <div id="projects" class="mt-10">
+        <p class="text-2xl">Recent Project</p>
+        <ProjectList projects={recentProjects} />
+      </div>
     </div>
   </div>
 </MainLayout>

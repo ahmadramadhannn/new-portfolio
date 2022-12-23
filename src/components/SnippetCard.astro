@@ -1,20 +1,23 @@
 ---
+import { stackImage } from "../helpers/helpers";
 const { snippet } = Astro.props;
+
+const frontmatter = snippet.frontmatter;
 ---
 
 <a
-  href={`snippet/${snippet.frontmatter.slug}`}
+  href={`snippet/${frontmatter.slug}`}
   class="border border-gray-500 min-h-[6em] shadow-sm shadow-cyan-500 p-3 hover:border-cyan-500"
 >
   <img
-    src="https://abrudz.github.io/logos/JS.svg"
+    src={stackImage[frontmatter.tech_stack]}
     class="h-8 rounded-full"
     alt="programming_logo"
   />
   <p id="title" class="text-lg font-bold mt-3">
-    {snippet.frontmatter.snippet_name}
+    {frontmatter.snippet_name}
   </p>
   <p class="text-white/70 text-sm">
-    {snippet.frontmatter.description}
+    {frontmatter.description}
   </p>
 </a>

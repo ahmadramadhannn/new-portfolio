@@ -2,6 +2,8 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import Icons from "../../components/Icons.astro";
 
+import { stackImage } from "../../helpers/helpers";
+
 export async function getStaticPaths() {
   const allProjects = await Astro.glob("../../data/projects/*.md");
 
@@ -12,13 +14,6 @@ export async function getStaticPaths() {
     };
   });
 }
-
-const logoImage: { [key: string]: string } = {
-  vue: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg",
-  "vue-router": "https://router.vuejs.org/logo.png",
-  tailwind:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-};
 
 const stackHomeLink: { [key: string]: string } = {
   vue: "https://vuejs.org/",
@@ -33,7 +28,7 @@ const tech_stack: string[] = frontmatter.tech_stack;
 
 <MainLayout title={projectName}>
   <div
-    class="md:mt-[100px] mx-auto w-11/12 md:max-w-[1000px] prose dark:prose-invert"
+    class="md:mt-[100px] mx-auto w-11/12 md:max-w-[1000px] prose dark:prose-invert pb-20"
   >
     <div class="grid gap-x-5 md:grid-cols-3">
       <div class="md:col-span-2">
@@ -53,7 +48,7 @@ const tech_stack: string[] = frontmatter.tech_stack;
           tech_stack.map(([stackName, stackImageandHome]) => (
             <div class="flex items-center gap-x-6">
               <img
-                src={logoImage[stackImageandHome]}
+                src={stackImage[stackImageandHome]}
                 alt="tech_logo"
                 class="h-8"
               />
@@ -68,7 +63,7 @@ const tech_stack: string[] = frontmatter.tech_stack;
           ))
         }
       </div>
-      <div class="md:col-span-2">
+      <div class="md:col-span-2 overflow-auto">
         <div class="md:flex items-center md:justify-between">
           <h1
             class="text-center md:text-start text-xl font-bold text-white mt-3"
@@ -84,14 +79,21 @@ const tech_stack: string[] = frontmatter.tech_stack;
                 Demo
               </p>
             </a>
-            <a href="#" class="flex gap-x-3 items-center no-underline group">
-              <Icons icon="bi-github" extraClass="text-xl" />
-              <p
-                class="font-semibold group-hover:text-cyan-500 group-hover:underline text-xl"
-              >
-                Source
-              </p>
-            </a>
+            {
+              frontmatter.githubLink ? (
+                <a
+                  href="#"
+                  class="flex gap-x-3 items-center no-underline group"
+                >
+                  <Icons icon="bi-github" extraClass="text-xl" />
+                  <p class="font-semibold group-hover:text-cyan-500 group-hover:underline text-xl">
+                    Source
+                  </p>
+                </a>
+              ) : (
+                ""
+              )
+            }
           </div>
         </div>
         <Content />

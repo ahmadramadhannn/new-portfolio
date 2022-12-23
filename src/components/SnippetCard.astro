@@ -3,6 +3,7 @@ import { stackImage } from "../helpers/helpers";
 const { snippet } = Astro.props;
 
 const frontmatter = snippet.frontmatter;
+const tags: string[] = frontmatter.tags;
 ---
 
 <a
@@ -20,4 +21,11 @@ const frontmatter = snippet.frontmatter;
   <p class="text-white/70 text-sm">
     {frontmatter.description}
   </p>
+  <div id="tags" class="flex items-center gap-2 mt-4">
+    {
+      tags.map((tag) => (
+        <p class="text-sm text-cyan-500">#{tag.toUpperCase()}</p>
+      ))
+    }
+  </div>
 </a>

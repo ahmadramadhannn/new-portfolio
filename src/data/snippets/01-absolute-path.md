@@ -1,8 +1,11 @@
 ---
 snippet_name: "Absolute path"
-description: "How to use path alias in js (vite)"
+description: "How to use path alias in js or typescript"
 slug: "absolute-path"
 tech_stack: "javascript"
+tags: 
+- javascript
+- typescript
 ---
 
 ## in vite
@@ -29,7 +32,7 @@ import path from "path";
 export default defineConfig({
   resolve: {
     alias: {
-      "~": path.resolve(__dirname, "src"),
+      "@": path.resolve(__dirname, "src"), // alias is refers to "paths" in compiler options
     },
   },
   plugins: [vue()],
@@ -41,4 +44,17 @@ and that's it, now you can import your component or anything else like this
 ```js
 import Header from '@/components/Header.vue'
 import getData from '@/services/getData.js';
+```
+
+## in webpack
+```js
+const path = require("path");
+
+module.exports = {
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src");
+    }
+  }
+}
 ```

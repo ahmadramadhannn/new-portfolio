@@ -75,10 +75,10 @@ dark desktop version
 ![hero](/assets/snippets/hero_dark_lg.png)
 
 dark mobile version
-![hero](../../src/assets/snippets/hero_dark_sm.png)
+![hero](/assets/snippets/hero_dark_sm.png)
 
 white desktop version
-![hero](../../src/assets/snippets/hero_white_lg.png)
+![hero](/assets/snippets/hero_white_lg.png)
 
 ### Simple hero
 
@@ -120,7 +120,7 @@ code :
 output:
 
 desktop version
-![This is an image](../../src/assets/snippets/hero_xl.png)
+![This is an image](/assets/snippets/hero_xl.png)
 
 mobile version
-![This is an image](../../src/assets/snippets/hero_sm.png)
+![This is an image](/assets/snippets/hero_sm.png)

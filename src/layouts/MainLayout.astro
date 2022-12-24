@@ -16,9 +16,11 @@ const { title, description, head } = Astro.props;
       <slot />
     </main>
     <style>
+      html {
+        color-scheme: dark;
+      }
       body {
         background: #000;
-        color: white;
         font-family: "Space Grotesk", sans-serif;
       }
     </style>

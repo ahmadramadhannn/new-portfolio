@@ -8,7 +8,7 @@ tags:
 - typescript
 ---
 
-## in vite
+### in vite
 
 create tsconfig.json / jsconfig.json in root project
 ```js
@@ -46,7 +46,7 @@ import Header from '@/components/Header.vue'
 import getData from '@/services/getData.js';
 ```
 
-## in webpack
+### in webpack
 ```js
 const path = require("path");
 

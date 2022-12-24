@@ -8,9 +8,9 @@ tags:
   - tailwind
 ---
 
-## With login form and dark mode support
+### With login form and dark mode support
 
-with login form and dark mode support code :
+code :
 
 ```html
 <div
@@ -69,17 +69,20 @@ with login form and dark mode support code :
 </div>
 ```
 
-with login form and dark mode support output :
+output :
 
 dark desktop version
-![This is an image](../../src/assets/snippets/hero_dark_lg.png)
+![hero](../../src/assets/snippets/hero_dark_lg.png)
+
+dark mobile version
+![hero](../../src/assets/snippets/hero_dark_sm.png)
 
 white desktop version
-![This is an image](../../src/assets/snippets/hero_white_lg.png)
+![hero](../../src/assets/snippets/hero_white_lg.png)
 
-## Simple hero
+### Simple hero
 
-simple hero code :
+code :
 
 ```html
 <div
@@ -114,7 +117,7 @@ simple hero code :
 </div>
 ```
 
-simple hero output:
+output:
 
 desktop version
 ![This is an image](../../src/assets/snippets/hero_xl.png)

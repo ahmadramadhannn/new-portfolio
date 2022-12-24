@@ -1,6 +1,9 @@
 ---
 import Icons from "./Icons.astro";
 import pages from "../data/pages";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname;
 ---
 
 <header
@@ -9,7 +12,15 @@ import pages from "../data/pages";
   {
     pages.map((page) => (
       <>
-        <a id="nav" href={page.href} class="hover:text-cyan-500 text-lg">
+        <a
+          id="nav"
+          href={page.href}
+          class={
+            currentPath === page.href
+              ? "active text-lg"
+              : "hover:text-cyan-500 text-lg"
+          }
+        >
           <Icons icon={page.icon} />
         </a>
       </>
@@ -17,4 +28,8 @@ import pages from "../data/pages";
   }
 </header>
 
-<script></script>
+<style>
+  .active {
+    color: #06b6d4;
+  }
+</style>

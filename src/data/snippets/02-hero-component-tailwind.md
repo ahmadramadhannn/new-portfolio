@@ -72,7 +72,7 @@ code :
 output :
 
 dark desktop version
-![hero](/public/assets/snippets/hero_dark_lg.png)
+![hero](/assets/snippets/hero_dark_lg.png)
 
 dark mobile version
 ![hero](../../src/assets/snippets/hero_dark_sm.png)

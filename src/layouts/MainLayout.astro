@@ -5,22 +5,18 @@ import Header from "../components/Header.astro";
 const { title, description, head } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     {head}
     <MainHead title={title} description={description} />
   </head>
-  <body>
+  <body class="bg-white text-black dark:bg-[#000] dark:text-white">
     <Header />
     <main tabindex="-1">
       <slot />
     </main>
     <style>
-      html {
-        color-scheme: dark;
-      }
       body {
-        background: #000;
         font-family: "Space Grotesk", sans-serif;
       }
     </style>

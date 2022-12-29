@@ -18,13 +18,15 @@ const snippet_name = frontmatter.snippet_name;
 
 <MainLayout title={snippet_name}>
   <div
-    class="mt-10 md:mt-[100px] mx-auto w-11/12 md:max-w-[750px] prose prose-invert dark:prose-invert pb-20"
+    class="mt-10 md:mt-[100px] mx-auto w-11/12 md:max-w-[750px] prose prose-invert prose-a:text-cyan-500 dark:prose-invert pb-20"
   >
     <div class="border-none">
       <div class="flex items-center justify-between">
         <div class="leading-3">
           <h1 class="text-lg md:text-2xl">{frontmatter.snippet_name}</h1>
-          <p class="text-white/70 w-11/12 sm:w-full leading-7 sm:leading-3">
+          <p
+            class="text-black/70 dark:text-white/70 w-11/12 sm:w-full leading-7 sm:leading-3"
+          >
             {frontmatter.description}
           </p>
         </div>

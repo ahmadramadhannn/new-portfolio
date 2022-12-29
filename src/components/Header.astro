@@ -17,7 +17,7 @@ const currentPath = pathname;
           href={page.href}
           class={
             currentPath === page.href
-              ? "active text-lg"
+              ? "text-cyan-500 hover:text-cyan-400 text-lg"
               : "hover:text-cyan-500 text-lg"
           }
           title={page.name}
@@ -28,9 +28,3 @@ const currentPath = pathname;
     ))
   }
 </header>
-
-<style>
-  .active {
-    color: #06b6d4;
-  }
-</style>

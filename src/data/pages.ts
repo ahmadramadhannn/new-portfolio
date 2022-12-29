@@ -2,7 +2,7 @@ interface Pages {
   id: number;
   name: string;
   icon: string;
-  href: string;
+  href?: string;
 }
 
 const pages: Pages[] = [

@@ -8,10 +8,10 @@ tags:
   - typescript
 ---
 
-### if you do not want to import components like this, you must use absolute path
+if you do not want to import components like this, you must use absolute path
 
 ```js
-// in homeview
+// in detailPage example : (src/views/User/UserDetailComponents)
 import DepthComponents from "../../components/dashboard/DepthComponents.vue";
 ```
 

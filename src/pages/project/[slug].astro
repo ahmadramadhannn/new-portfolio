@@ -74,7 +74,8 @@ const tech_stack: string[] = frontmatter.tech_stack;
           </h1>
           <div class="flex justify-center md:justify-start gap-6">
             <a
-              href="#"
+              href={frontmatter.demoLink}
+              target="_blank"
               class="flex items-center gap-x-3 no-underline group text-black dark:text-white"
             >
               <Icons icon="bi-globe" extraClass="text-xl" />
@@ -87,7 +88,8 @@ const tech_stack: string[] = frontmatter.tech_stack;
             {
               frontmatter.githubLink ? (
                 <a
-                  href="#"
+                  href={frontmatter.githubLink}
+                  target="_blank"
                   class="flex gap-x-3 items-center no-underline group"
                 >
                   <Icons icon="bi-github" extraClass="text-xl" />

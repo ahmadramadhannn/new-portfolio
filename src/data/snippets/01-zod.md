@@ -1,5 +1,5 @@
 ---
-snippet_name: "Basid Validate with Zod"
+snippet_name: "Basic Validate with Zod"
 description: "How to use zod with TS"
 slug: "basic-zod"
 tech_stack: "typescript"

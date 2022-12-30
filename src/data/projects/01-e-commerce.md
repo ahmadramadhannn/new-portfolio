@@ -12,6 +12,8 @@ tech_stack:
   - ["Tailwindcss", "tailwind"]
 ---
 
+## hai there
+
 ```js
 export async function getStaticPaths() {
   const allProjects = await Astro.glob("../../data/projects/*.md");

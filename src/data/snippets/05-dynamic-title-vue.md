@@ -7,7 +7,7 @@ tags:
   - "vue"
 ---
 
-#### Just add something like this
+#### Just add something like this in router
 
 ```js
 router.beforeEach((to, from, next) => {

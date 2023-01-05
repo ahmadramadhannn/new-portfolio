@@ -12,6 +12,18 @@ tags:
 
 If you have question why i'm using cmd for installing packages, the answer is because it is very simple and very easy to do if you want install another packages, because the process is actually the same.
 
+### Simple installation
+
+This is very simple ways to install ventoy in cmd, you only need type sudo pacman -S ventoy-bin, and that's is the process is done
+
+![first_step](/assets/snippets/simple_first_step.png)
+
+### Finish simple installation
+
+![finish](/assets/snippets/simple_step_finish.png)
+
+### With several steps :
+
 ### Open the terminal and make sure git is installed on your system
 
 First make sure you are installing git, git is important because we need git for clone the repo, not just ventoy repo, for example: if you want to install vs code, you need to clone the repo too, and another packages also.

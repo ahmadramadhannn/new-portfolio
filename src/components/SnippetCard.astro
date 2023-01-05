@@ -4,6 +4,7 @@ const { snippet } = Astro.props;
 
 const frontmatter = snippet.frontmatter;
 const tags: string[] = frontmatter.tags;
+const techStackLogo = frontmatter.tech_stack;
 ---
 
 <a
@@ -11,7 +12,7 @@ const tags: string[] = frontmatter.tags;
   class="group border border-gray-500 min-h-[6em] shadow-sm shadow-cyan-500 p-3 hover:border-cyan-500 hover:transition hover:duration-200"
 >
   <img
-    src={stackImage[frontmatter.tech_stack]}
+    src={stackImage[techStackLogo ? techStackLogo : frontmatter.logo]}
     class="h-8 rounded-full"
     alt="programming_logo"
   />

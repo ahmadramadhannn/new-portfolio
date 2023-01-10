@@ -12,17 +12,24 @@ tech_stack:
   - ["Tailwindcss", "tailwind"]
 ---
 
-## hai there
+E-commerce with supabase is a website with supabase in backend and vuejs in frontend, The reason why i made this because i think this is great website and also great to push my skill.
 
-```js
-export async function getStaticPaths() {
-  const allProjects = await Astro.glob("../../data/projects/*.md");
+I created this website within a week.
 
-  return allProjects.map((project) => {
-    return {
-      params: { slug: project.frontmatter.slug },
-      props: { ...project },
-    };
-  });
-}
-```
+I think i not found any problem to build this website, except when user type directyly in browser the page is showing 404, and i fix that problem.
+
+Features
+
+- quick view a product :
+  ![quick_view](/assets/projects/quick_view.png)
+- wishlist with search :
+  ![wishlist](/assets/projects/wishlist.png)
+- detail page :
+  ![detailpage](/assets/projects/detailpage.png)
+- basket :
+  ![cart](/assets/projects/cart.png)
+- cart with search :
+  ![cart](/assets/projects/cart_with_search.png)
+  And more
+
+Thanks.

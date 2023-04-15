@@ -26,17 +26,7 @@ const recentProjects = allProjects.slice(0, 4);
       </p>
     </div>
     <div class="mt-10">
-      <div id="snippet">
-        <p class="text-2xl">Recent Snippets</p>
-        <SnippetList snippets={recentSnippets} />
-        <a
-          href="/snippets"
-          type="button"
-          class="border border-gray-500 dark:border-gray-300 px-3 py-1 rounded-md hover:border-cyan-500 hover:transition hover:duration-300 hover:text-cyan-400 mt-3 text-lg"
-          >All Snippets</a
-        >
-      </div>
-      <div id="projects" class="mt-10">
+      <div id="projects">
         <p class="text-2xl">Recent Project</p>
         <ProjectList projects={recentProjects} />
         <a
@@ -44,6 +34,16 @@ const recentProjects = allProjects.slice(0, 4);
           type="button"
           class="border border-gray-500 dark:border-gray-300 px-3 py-1 rounded-md hover:border-cyan-500 hover:transition hover:duration-300 hover:text-cyan-400 mt-3 text-lg"
           >All Projects</a
+        >
+      </div>
+      <div id="snippet" class="mt-10">
+        <p class="text-2xl">Recent Snippets</p>
+        <SnippetList snippets={recentSnippets} />
+        <a
+          href="/snippets"
+          type="button"
+          class="border border-gray-500 dark:border-gray-300 px-3 py-1 rounded-md hover:border-cyan-500 hover:transition hover:duration-300 hover:text-cyan-400 mt-3 text-lg"
+          >All Snippets</a
         >
       </div>
     </div>
